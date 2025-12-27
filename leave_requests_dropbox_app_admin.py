@@ -6,13 +6,13 @@ import uuid
 import pandas as pd
 from openpyxl import load_workbook
 
-st.set_page_config(page_title="Rota Leave Requests (Dropbox-safe)", layout="wide")
+st.set_page_config(page_title="Rota Leave Requests", layout="wide")
 
-st.title("Rota Leave Requests (Dropbox-safe)")
+st.title("Rota Leave Requests")
 st.write(
     "This UI stores each leave request as an individual JSON file in a Dropbox-synced folder. "
     "This avoids Excel sync conflicts. Users can add/edit/delete requests, then a rota admin can "
-    "compile them into the `Leave` sheet of `Rota_Publish_Template_ORtools.xlsx` when ready to publish."
+    "compile them into the `Leave` sheet of `Rota_Master.xlsx` when ready to publish."
 )
 
 # -----------------------------
